@@ -31,7 +31,7 @@ totalPrice = calcTax(my_price, 0.06)
 print('цена = ', my_price, 'Итоговая цена = ', totalPrice)
 print('цена вне функции = ', my_price)
 '''
-def myFunction():
+def myFunction(i):
     print('..............................................................|||||||||||')
     print('|____/\____RRRRR    OOOOO   MMM     MMM      AAA      NNN    NN\   ||   /|')
     print('|___/||\___RR  RR  OO   OO  MM M   M MM     AA AA     NN NN  NN_\  ||  /_|')
@@ -48,7 +48,10 @@ def myFunction():
     print('|/   ||   \|RR   RR AAAA   AAAA BBBBB  BBBBB  IIII   TT       WWW      WWW     EEEEE BBBBB |____\/____|')
     print('------------------------------------------------------------------------------------------------------')
 
-i = 1
-while i <= 3:
-    myFunction()
+
+while total <= 3:
+    myFunction(i)
     i ++ 1
+
+i = 1
+total = i
