@@ -1,6 +1,6 @@
 import pygame, sys, random
 
-skier_images = ["skier_down.png", "skier_right1.png", "skier_right2.png", "skier_left2.png", "skkier_left1.png"]
+skier_images = ["skier_down.png", "skier_right1.png", "skier_right2.png", "skier_left2.png", "skier_left1.png"]
 
 class SkierClass(pygame.sprite.Sprite):
     def __init__(self):
@@ -22,8 +22,10 @@ class SkierClass(pygame.sprite.Sprite):
         
     def move(self, speed):
         self.rect.centerx = self.rect.centerx + speed[0]
-        if self.rect.centerx < 20: self.rect.centerx = 20
-        if self.rect.centerx > 620: self.rect.centerx = 620
+        if self.rect.centerx < 20:
+            self.rect.centerx = 20
+        if self.rect.centerx > 620:
+            self.rect.centerx = 620
     
 class ObstacleClass(pygame.sprite.Sprite):
     def __init__(self, image_file, location, type):

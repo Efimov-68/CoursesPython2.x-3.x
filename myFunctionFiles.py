@@ -84,11 +84,11 @@ def myFunction():
     print('                                                                                            |/_\-/_\|  ')
     print('                                                                                              ?   ? ')
     print('.....................................................................................................|||||||||||')
-    print('                      |____/\____RRRRR    OOOOO   MMM     MMM      AAA      NNN    NN\   ||   /|')
-    print('                      |___/||\___RR  RR  OO   OO  MM M   M MM     AA AA     NN NN  NN_\  ||  /_|')
-    print('                      |__/ || \__RRRRR   OO   OO  MM MM MM MM    AA   AA    NN  NN NN__\ || /__|')
-    print('                      |_/  ||  \_RR  RR  OO   OO  MM  MMM  MM   AAAAAAAAA   NN   N NN___\||/___|')
-    print('                      |/   ||   \RR   RR  OOOOO   MM       MM  AAAA   AAAA  NN    NNN____\/____|')
+    print('                      |____/\___  RRRRR    OOOOO   MMM        MMM       AAA       NNN     NN\   ||   /|')
+    print('                      |___/||\___ RR   RR  OO    OO MM M      M MM     AA   AA     NN NN  NN_\  ||  /_|')
+    print('                      |__/  || \__ RRRRR   OO     OO MM MM MM MM    AA     AA    NN  NN NN__\ || /__|')
+    print('                      |_/    ||  \_ RR   RR  OO    OO  MM  MMM   MM   AAAAAAAA   NN    N NN___\||/___|')
+    print('                      |/      ||   \ RR     RR OOOOO   MM            MM  AAAA  AAAA  NN     NNN____\/____|')
     print('......................|||||||||||..............................................................')
     print()
     print('---------------------------------------------------------------------------------------------------------------')
@@ -99,8 +99,10 @@ def myFunction():
     print('        |/   ||   \|RR   RR AAAA   AAAA BBBBB  BBBBB  IIII   TT       WWW      WWW     EEEEE BBBBB |____\/____|')
     print('---------------------------------------------------------------------------------------------------------------')
 
-i = 0
-while i < 3:
-    myFunction()
-    i ++ 1
-    time.sleep(0.4)
+    i = 0
+    while i == 3:
+        myFunction()
+        i ++ 1
+        time.sleep(0.4)
+
+myFunction()
