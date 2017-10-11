@@ -1,5 +1,30 @@
-#Мой проект на Python 3.x.
-firstName = list[]
-lastName = list[]
-email = list[]
-address = list[]
+#Алфавит строчные буквы
+alphabet = ["а","б","в","г","д","е","ё","ж","з","и","й","к","л","м","н","о","п","р","с","т","у","ф","х","ц","ч","ш","щ","ъ","ы","ь","э","ю","я"]
+#Гласные буквы
+vowels = ["а", "е", "ё", "и", "й", "о", "у", "э", "ю", "я"]
+#Согласные буквы
+consonants = ["б", "в", "г", "д", "ж", "з", "к", "л", "м", "н", "п", "р", "с", "т", "ф", "х", "ц", "ч", "ш", "щ"]
+#Знаки препинания
+#Правила русского языка
+import random
+x = random.randint
+
+def myFunct():
+    question = str(input("Задайте свой вопрос: "))
+    '''
+    if question == x:
+        print('Yes')
+    else:
+        print('Error')
+    '''
+    for x in range(9):
+        print(question)
+
+    
+    return myFunct()
+
+myFunct()
+
+class Word():
+    def __init__(self):
+        pass
