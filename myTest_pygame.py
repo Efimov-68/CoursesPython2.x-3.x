@@ -81,6 +81,7 @@ my_ball = pygame.image.load('beach_ball.png')
 x = 50
 y = 50
 x_speed = 10
+y_speed = 10
 screen.blit(my_ball,[x,y])
 pygame.display.flip()
 running = True
@@ -91,8 +92,12 @@ while running:
     pygame.time.delay(20)
     pygame.draw.rect(screen, [255, 255, 255], [x, y, 90, 90], 0)
     x = x + x_speed
+    #y = y + y_speed
     if x > screen.get_width() - 90 or x < 0:
-        x_speed = - x_speed
+        #x_speed = - x_speed
+        x = 0
+    #if y > screen.get_height() - 90 or y < 0:
+    #    y_speed = - y_speed
     screen.blit(my_ball, [x, y])
     pygame.display.flip()
 pygame.quit()
