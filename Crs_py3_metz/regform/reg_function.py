@@ -16,19 +16,23 @@ def get_new_user():
     login = input("Придумайте уникальный логин для вашего профиля: ")
     password = input()
     rep_password = input()
-    if rep_password == password:
-        print("Пароль совпадает.\n")
-        first = input("Введите ваше имя:\n")
-        last = input("Введите вашу фамилию:\n")
-        email = input("Введите E-mail:\n")
-        phone = input("Введите телефон:\n")
-        text = input("Ваш комментарий:\n")
-    elif rep_password != password:
-        print("Пароль не совпадает. Повторите ввод.")
-        return rep_password
+
+    while True:
+        if rep_password == password:
+            print("Пароль совпадает.\n")
+            first = input("Введите ваше имя:\n")
+            last = input("Введите вашу фамилию:\n")
+            middle = input("Введите отчество(усли есть):\n")
+            email = input("Введите E-mail:\n")
+            phone = input("Введите телефон:\n")
+            text = input("Ваш комментарий:\n")
+            break
+        else:
+            print("\nПароль не совпадает. Повторите ввод.\n")
+            return rep_password
     regform = {'login': login, 'password': password,\
-               'rep_password': rep_password, 'first': first,\
-               'last': last, 'email': email, 'phone': phone, 'text': text}
+               'first': first, 'last': last, 'middle': middle,\
+               'email': email, 'phone': phone, 'text': text}
     
     filename = "regform.json"
     with open(filename, "w") as f_obj:
