@@ -1,4 +1,3 @@
-
 def count_words(filename):
     try:
         with open(filename, "r") as f_obj:
